@@ -1,0 +1,26 @@
+<%- include("templates/encabezado") %>
+<%- include("templates/menu") %>
+<form action="/modificarUsuario" method="post" id="formulario" class="bg-black">
+  <div class="vstack gap-2 m-5 p-2">
+  <h1 class="text-center text-light text-capitalize">Modificar a el usuario  <%= usuario.nombre %></h1>
+  <br>
+  <div class="form-group">
+    <label for="usr1" class="m-1 p-2 text-light fs-3">Usuario</label>
+    <input type="hidden" name="id" id="id" value="<%= usuario.id %>">
+    <input type="text" class="form-control" id="name" name="name" aria-describedby="usuarioHelp" placeholder="Usuario" value=<%= usuario.nombre %>>
+  </div>
+    <br>
+    <div class="form-group">
+        <label for="usr1" class="m-1 p-2 text-light fs-3">Usuario</label>
+        <input type="text" class="form-control" id="usuario" name="usuario" aria-describedby="usuarioHelp" placeholder="Usuario" value=<%= usuario.usuario %>>
+      </div>
+      <br>
+    <div class="form-group">
+      <label for="exampleInputPassword1" class="m-1 p-2 text-light fs-3">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" id="password" name="password" placeholder="Password" value=<%= usuario.password %>>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary alert-dark">Modificar Usuario</button>
+    <br>
+  </div>
+  </form>

@@ -1,0 +1,25 @@
+<%- include("templates/encabezado") %>
+<%- include("templates/menu") %>
+<form action="/capturarUsuario" method="post" id="formulario" class="bg-black">
+  <div class="vstack gap-2 m-5 p-2">
+  <h1 class="text-center text-light text-capitalize">Nuevo usuario</h1>
+  <br>
+    <div class="form-group">
+      <label for="name1" class="m-1 p-2 text-light fs-3">Nombre</label>
+      <input type="text" class="form-control" id="nombre" name="nombre" aria-describedby="nombreHelp" placeholder="Nombre">
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="usr1" class="m-1 p-2 text-light fs-3">Usuario</label>
+        <input type="text" class="form-control" id="usuario" name="usuario" aria-describedby="usuarioHelp" placeholder="Usuario">
+      </div>
+      <br>
+    <div class="form-group">
+      <label for="exampleInputPassword1" class="m-1 p-2 text-light fs-3">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" id="password" name="password" placeholder="Password">
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary alert-dark">Submit</button>
+    <br>
+  </div>
+  </form>
