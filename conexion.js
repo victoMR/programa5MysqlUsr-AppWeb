@@ -42,7 +42,6 @@ conexion.sync({ force: false }) // esta es una promesa
     .catch((err)=>{
       console.log("Error en localhost: " + err);
     });
-  });
 
 var Usuario = usuarioModelo(conexion);
 
