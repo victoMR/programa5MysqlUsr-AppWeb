@@ -1,13 +1,13 @@
-var express = require('express');
-var usuariosRuta = require("./rutas/usuarios");
+const express = require('express');
+const usuariosRuta = require("./rutas/usuarios");
 
-var app = express();
+const app = express();
 app.set('view engine', 'ejs');
-app.use(express.urlencoded({ extended:true}));
-app.use("/",usuariosRuta);
+app.use(express.urlencoded({ extended: true }));
+app.use("/", usuariosRuta);
 
-var port = process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 
-app.listen(port,()=>{
-    console.log(`Servidor en el http://localhost:${port}`);
-})
+app.listen(port, () => {
+  console.log(`Servidor en el http://localhost:${port}`);
+});
